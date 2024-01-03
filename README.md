@@ -18,6 +18,7 @@ Contents:
 
 
 Summary:
+
 The "Surfs" directory contains all the files 
 
 The "Resources" directory contains the sqlite and csv files used in the project
