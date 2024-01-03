@@ -1,4 +1,3 @@
-# Import the dependencies.
 
 # Import Dependencies
 import sqlalchemy
@@ -64,7 +63,7 @@ def welcome():
 def precipitation():
     #recent_year = dt.date(2017, 8, 23)
     #year_before = recent_year - dt.timedelta(days=365)
-    precipitation = session.query(measurement.date, measurement.prcp).filter(measurement.date >= '2016-08-24').all()
+    precipitation = session.query(measurement.prcp, measurement.date).filter(measurement.date >= '2016-08-24').all()
     total_prcp = []
     for date,prcp  in precipitation:
         prcp_dict = {}
